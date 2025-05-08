@@ -27,5 +27,10 @@ jogosAlugados--;
     jogosAlugados++;
 }
 
-
+contarEExibirJogosAlugados();
 }
+// Inicializa a contagem considerando que os jogos já começam alugados
+document.addEventListener('DOMContentLoaded', function() {
+    jogosAlugados = document.querySelectorAll('.dashboard__item__img--rented').length;
+    contarEExibirJogosAlugados();
+});
